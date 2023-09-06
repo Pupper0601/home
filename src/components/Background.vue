@@ -46,6 +46,8 @@ const changeBg = (type) => {
     bgUrl.value = "https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images";
   } else if (type == 3) {
     bgUrl.value = "https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images";
+  } else if (type == 4) {
+    bgUrl.value = "https://random-img.pupper.cn";
   }
 };
 
@@ -98,7 +100,7 @@ onBeforeUnmount(() => {
   height: 100%;
   transition: 0.25s;
   z-index: -1;
-
+  filter: blur(45px);
   .bg {
     position: absolute;
     left: 0;
